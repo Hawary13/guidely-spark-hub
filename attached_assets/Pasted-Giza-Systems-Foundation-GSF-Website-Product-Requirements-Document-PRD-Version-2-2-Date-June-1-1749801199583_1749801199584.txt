@@ -1,0 +1,172 @@
+Giza Systems Foundation (GSF) Website: Product Requirements Document (PRD)
+Version: 2.2
+Date: June 13, 2025
+
+1. Introduction
+This document outlines the product requirements for the new Giza Systems Foundation (GSF) website. The primary goal is to create a modern, well-structured, and user-friendly production-ready Progressive Web App (PWA) that effectively communicates GSF's mission, programs, and impact. The site will serve as a central hub for beneficiaries, partners, mentors, volunteers, and the general public. The target audience is youth, so the design must be creative, innovative, and engaging.
+
+This PRD is intended to be used by an agentic AI coder to develop the complete, scalable, and manageable website infrastructure.
+
+2. Goals and Objectives
+Primary Goal: To develop a new, high-performance website that improves user experience, engagement, and conversions (e.g., applications, partnership inquiries).
+
+Objective 1: Clearly articulate GSF’s identity, mission, and "system aggregator" approach.
+
+Objective 2: Showcase the full scope and impact of GSF's programs and success stories.
+
+Objective 3: Create clear pathways for users to get involved (apply, partner, volunteer, mentor).
+
+Objective 4: Adhere strictly to GSF's visual identity and branding guidelines.
+
+Objective 5: Ensure the website is modern, clean, and visually appealing, with a user-friendly navigation and a default light/white theme.
+
+Objective 6: Build a robust and intuitive back-end admin panel that gives non-technical staff full control over all website content and SEO settings.
+
+Objective 7: Enhance user experience by providing a user-selectable dark mode option.
+
+3. Target Audience
+Primary: Youth in Egypt (potential program participants, entrepreneurs).
+
+Secondary:
+
+Potential Partners (Corporations, NGOs, Investors).
+
+Mentors and Industry Experts.
+
+Volunteers.
+
+Media and the general public.
+
+4. General Design and Branding Guidelines
+The website design must be clean, simple, and modern. The overall aesthetic should be creative and innovative to appeal to a younger audience. The site must support both a light and a dark theme.
+
+4.1. Branding & Visual Identity (Reference: GSF CI Updated.pdf)
+
+Logo:
+
+Use the appropriate version of the GSF logo for light and dark backgrounds as specified in the branding guidelines.
+
+The logo in the header should link back to the Home Page.
+
+Maintain the logo's aspect ratio; do not stretch, slant, or alter it.
+
+Color Palette & Theming:
+
+Light Mode (Default): Use a white or very light background for the main content areas to ensure readability and a modern feel. Text should be a dark color (e.g., dark grey or the primary dark blue).
+
+Dark Mode: Use a dark background (e.g., a dark navy derived from #003B71 or a neutral dark grey like #121212). Text should be white or a light off-white.
+
+Accent Colors: The primary (#003B71, #00A7E1) and secondary colors (Purple, Yellow, Grey, Red, Green, Teal) should be used for accents like buttons, links, and graphical elements in both themes, ensuring they have sufficient contrast.
+
+Typography:
+
+Primary Font: Helvetica World (for headings).
+
+Secondary Font: Arial (Regular and Bold for body text).
+
+Ensure all text is clearly legible with sufficient contrast in both light and dark modes. Paragraphs should be justified where appropriate. Avoid text effects like drop shadows, gradients, or beveling.
+
+4.2. Visual Content
+
+Imagery: Every page must incorporate high-quality, live photos from GSF events, programs, or videos. Ensure images are visible and well-integrated in both light and dark themes.
+
+Partner Logos: All partner logos must be high-quality with transparent backgrounds and displayed professionally on both themes.
+
+5. Website Structure and Navigation (Sitemap)
+The main navigation menu should be clear and simple, presented as inline tabs. An "Apply NOW" button should be prominently featured in the header. A theme-switcher toggle should also be accessible in the header or footer.
+
+Header Navigation:
+
+Home (Clicking GSF Logo also returns to Home)
+
+About Us
+
+Programs (Dropdown menu)
+
+Impact & Success Stories
+
+Events & Media
+
+Join Us
+
+[Apply NOW] (Button)
+
+Light/Dark Mode Toggle
+
+6. Page-by-Page Content & Functional Requirements
+This section details the specific content required for each page. All text, images, videos, and links must be fully editable through the admin panel.
+
+(Content for sections 6.1 through 6.7 remains the same as the previous version, detailing the specific text and components for each page: Home, About Us, Programs, Impact & Success Stories, Events & Media, Join Us, and Footer.)
+
+7. Technical & Production Requirements
+Architecture: The site must be built as a Progressive Web App (PWA) using a modern React framework (e.g., Next.js).
+
+Responsiveness: The layout must be fully responsive and optimized for a seamless experience on all devices (mobile, tablet, desktop).
+
+User Interface:
+
+Theme Switching: Implement a user-facing toggle to switch between light and dark modes. The user's preference should be saved (e.g., using localStorage) to persist across sessions.
+
+Advanced Admin Panel:
+
+A secure, user-friendly backend interface must be developed.
+
+Full Content Control: Allow non-technical users to edit all text, images, videos, and links on every page and in every section of the website.
+
+Program Management: Full CRUD (Create, Read, Update, Delete) capabilities for all programs. This includes creating new program pages, editing all their content (overview, objectives, process, key achievements, etc.), and changing their status (e.g., 'Active & Accepting Applications', 'Upcoming', 'Archived') to control their visibility and functionality on the front-end.
+
+Dynamic Sections Management: Provide dedicated interfaces for managing dynamic content like "Latest News & Events," "Job Vacancies," "Team Members," "Partners," etc.
+
+Form Management: Allow admins to view and export submissions from all website forms.
+
+SEO & Accessibility:
+
+Admin SEO Controls: The admin panel must provide page-level controls for editing SEO metadata (meta titles, descriptions, keywords).
+
+Best Practices: Build with SEO best practices (semantic HTML, proper heading structure, alt tags).
+
+Accessibility: Adhere to WCAG 2.1 AA standards, ensuring sufficient contrast in both light and dark modes.
+
+Performance & Best Practices (Production Ready):
+
+Caching: Implement robust caching strategies (browser and server-side).
+
+Image Optimization: Automatically optimize uploaded images for the web.
+
+Code Minification: Bundle and minify all CSS and JavaScript assets.
+
+Lazy Loading: Implement lazy loading for images and components outside the initial viewport.
+
+Browser Compatibility: Must render correctly on the latest versions of major browsers (Chrome, Firefox, Safari, Edge).
+
+8. References & Competitor Analysis
+The following websites should be used as a reference for modern design and functionality in the same sector. The goal is to be inspired by them but to create a unique identity for GSF.
+
+https://www.nmedventures.com/
+
+https://entreprenelle.com/
+
+https://flat6labs.com/
+
+https://www.plugandplaytechcenter.com/
+
+https://falak.sa/en
+
+Prompt for Agentic AI Coder:
+"You are tasked with developing the new website for the Giza Systems Foundation (GSF). Please build the complete, production-ready application according to the comprehensive Product Requirements Document (PRD) v2.2 provided above.
+
+Key Instructions:
+
+Full Stack Development: Build a full-stack application. Use a modern React framework like Next.js for the front-end and a suitable backend (e.g., Node.js) to power the admin panel and API.
+
+Advanced Admin Panel: The core of this project is the admin panel. It must be secure and provide full, intuitive control over all website content, including full program management and SEO settings, as detailed in section 7.
+
+Light/Dark Mode: Implement a theme-switcher for light and dark modes as specified in the design guidelines. Ensure the user's choice is remembered across sessions.
+
+PWA & Performance: Build the site as a Progressive Web App. Implement all performance best practices, including caching, image optimization, and lazy loading.
+
+Branding and Content: Strictly adhere to the GSF branding guidelines and populate the site with the initial content specified in the PRD. Ensure all this content is editable via the admin panel you create.
+
+Database: Use a reliable database (e.g., PostgreSQL or MongoDB) to store all website content and form submissions.
+
+Deployment: Structure the code to be ready for deployment on modern cloud hosting platforms."

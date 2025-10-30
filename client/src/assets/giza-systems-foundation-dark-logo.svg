@@ -1,0 +1,15 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <rect width="300" height="80" fill="#000000"/>
+  <g fill="#ffffff">
+    <!-- GS Logo -->
+    <path d="M20 20 L35 20 L50 35 L35 50 L20 50 L35 35 Z"/>
+    <path d="M35 20 L50 20 L50 35 L35 35 Z"/>
+    
+    <!-- Giza Systems text -->
+    <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Giza Systems</text>
+    
+    <!-- FOUNDATION text -->
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="normal" letter-spacing="2px">FOUNDATION</text>
+  </g>
+</svg>
