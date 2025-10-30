@@ -51,7 +51,10 @@ export class FastAuthService {
         id: 'admin-001',
         email: 'admin@gsf.org.eg',
         name: 'GSF Administrator',
+        displayName: 'GSF Administrator',
         role: 'super_admin',
+        permissions: ['all'],
+        isActive: true,
         createdAt: new Date('2024-01-01'),
         updatedAt: new Date(),
         lastLogin: new Date()

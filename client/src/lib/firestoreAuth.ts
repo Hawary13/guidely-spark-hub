@@ -142,6 +142,7 @@ export class FirestoreAuthService {
         const fallbackUser: User = {
           id: 'admin-fallback',
           email: 'admin@gsf.org.eg',
+          name: 'GSF Administrator',
           displayName: 'GSF Administrator',
           role: 'super_admin',
           permissions: ['all'],
@@ -183,6 +184,7 @@ export class FirestoreAuthService {
       const newUser = {
         id: `user-${Date.now()}`,
         email: userData.email,
+        name: userData.displayName,
         displayName: userData.displayName,
         role: userData.role,
         permissions: this.getRolePermissions(userData.role),

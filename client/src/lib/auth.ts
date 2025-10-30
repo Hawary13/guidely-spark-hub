@@ -92,6 +92,7 @@ export class AuthService {
       const passwordHash = this.hashPassword(userData.password);
       const newUser = {
         email: userData.email,
+        name: userData.displayName,
         displayName: userData.displayName,
         role: userData.role,
         permissions: this.getRolePermissions(userData.role),

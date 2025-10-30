@@ -25,8 +25,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase with performance optimizations
+import type { Firestore } from 'firebase/firestore';
+
 let app;
-let db;
+let db: Firestore;
 
 try {
   const existingApps = getApps();

@@ -101,6 +101,7 @@ export class SimpleAuthService {
       // Create user document
       const newUser = {
         email: userData.email,
+        name: userData.displayName,
         displayName: userData.displayName,
         role: userData.role,
         permissions: this.getRolePermissions(userData.role),

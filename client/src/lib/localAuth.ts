@@ -90,6 +90,7 @@ export class LocalAuthService {
       const newUser = {
         id: `user-${Date.now()}`,
         email: userData.email,
+        name: userData.displayName,
         displayName: userData.displayName,
         role: userData.role,
         permissions: this.getRolePermissions(userData.role),
